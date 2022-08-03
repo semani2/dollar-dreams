@@ -37,6 +37,10 @@ android {
         jvmTarget = '1.8'
     }
 
+    dataBinding {
+        enabled = true
+    }
+
     buildFeatures {
         dataBinding = true
     }
@@ -51,6 +55,11 @@ dependencies {
     implementation "androidx.test.espresso:espresso-idling-resource:$espressoVersion"
     implementation "androidx.room:room-runtime:$roomVersion"
     kapt "androidx.room:room-compiler:$roomVersion"
+
+    // Epoxy
+    implementation "com.airbnb.android:epoxy:5.0.0-beta03"
+    implementation 'com.airbnb.android:epoxy-databinding:5.0.0-beta03'
+    kapt "com.airbnb.android:epoxy-processor:5.0.0-beta03"
 
     // Architecture Components
     implementation "androidx.room:room-runtime:$roomVersion"
