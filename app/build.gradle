@@ -61,6 +61,13 @@ dependencies {
     implementation 'com.airbnb.android:epoxy-databinding:5.0.0-beta03'
     kapt "com.airbnb.android:epoxy-processor:5.0.0-beta03"
 
+    // Navigation component
+    implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
+    implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
+
+    // Testing Navigation
+    androidTestImplementation "androidx.navigation:navigation-testing:$nav_version"
+
     // Architecture Components
     implementation "androidx.room:room-runtime:$roomVersion"
     kapt "androidx.room:room-compiler:$roomVersion"
